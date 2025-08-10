@@ -76,4 +76,7 @@
 ;; they are implemented.
 
 ;; loading pkg-config
+(use-package wakatime-mode :ensure t)
 (load! "./pkg-config/projectile.el")
+
+(global-wakatime-mode)
