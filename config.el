@@ -78,5 +78,7 @@
 ;; loading pkg-config
 (use-package wakatime-mode :ensure t)
 (load! "./pkg-config/projectile.el")
-
+(after! ophints
+  (setq evil-goggles-duration 0.5)
+  )
 (global-wakatime-mode)
