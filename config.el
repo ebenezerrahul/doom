@@ -82,3 +82,6 @@
   (setq evil-goggles-duration 0.5)
   )
 (global-wakatime-mode)
+(after! company
+  (define-key company-active-map (kbd "C-SPC") nil)  ; Remove the old binding
+  (define-key company-active-map (kbd "C-y") #'company-complete-selection))
